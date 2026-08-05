@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="112" fill="#141210"/>
+  <!-- Bold Checkmark -->
+  <path d="M 95 295 L 185 385 L 295 245" fill="none" stroke="#d6927e" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Main 5-Point Star -->
+  <path d="M 375 70 L 392 110 L 435 110 L 400 135 L 414 175 L 375 150 L 336 175 L 350 135 L 315 110 L 358 110 Z" fill="#d6927e"/>
+
+  <!-- Top-Left 5-Point Star -->
+  <path d="M 265 75 L 277 103 L 307 103 L 283 121 L 292 149 L 265 131 L 238 149 L 247 121 L 223 103 L 253 103 Z" fill="#d6927e"/>
+
+  <!-- Bottom-Right 5-Point Star -->
+  <path d="M 405 195 L 417 223 L 447 223 L 423 241 L 432 269 L 405 251 L 378 269 L 387 241 L 363 223 L 393 223 Z" fill="#d6927e"/>
+</svg>
