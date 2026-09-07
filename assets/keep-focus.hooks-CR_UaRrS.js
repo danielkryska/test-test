@@ -1,0 +1,1 @@
+import{d as n}from"./index-CQUSARd_.js";function s(r,u){n.useEffect(()=>{if(!r)return;const e=()=>{var t;return(t=u.current)==null?void 0:t.focus()};return e(),document.addEventListener("focusin",e,!0),()=>document.removeEventListener("focusin",e,!0)},[r,u])}export{s as u};
