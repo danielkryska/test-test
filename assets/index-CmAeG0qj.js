@@ -1,0 +1,6 @@
+import{y as m,u as n,z as r,k as i,A as h,B as c,h as d,E as l,m as a,L as g,S as u,F as x}from"./index-C-xLKq91.js";import{G as j,H as v,J as C,K as L}from"./index-C-xLKq91.js";/**
+ * @license lucide-react v0.400.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const p=m("Moon",[["path",{d:"M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z",key:"a7tn18"}]]);function f(){const t=n(r);i.useEffect(()=>{if(t.theme)return;const s=window.matchMedia("(prefers-color-scheme: dark)"),e=()=>{const o=s.matches?"dark":"light";h(o)};return s.addEventListener("change",e),()=>s.removeEventListener("change",e)},[t.theme])}function k(){f();const t=n(c),s=d(l),e=t==="dark",o=e?"light":"dark";return a.jsx("div",{className:"px-sm",children:a.jsx(g,{icon:e?a.jsx(x,{size:16,strokeWidth:1.5}):a.jsx(p,{size:16,strokeWidth:1.5}),label:e?"Light mode":"Dark mode",extras:a.jsx(u,{checked:e,onCheckedChange:()=>s(o),"aria-label":`Switch to ${o} theme`})})})}const T=t=>t,y={id:"themes",name:"Themes",version:"0.0.0",extras:[{id:"themes.toggle",slot:"avatar.dropdown.items",order:20,component:T(k)}],init:()=>{}};export{k as ThemeToggle,h as applyTheme,y as default,j as getInitialTheme,v as hydrateThemeAtBoot,C as loadThemeFromStorage,L as manifest,c as themeAtom,l as themeToggleAtom,f as useSystemThemeSync};
