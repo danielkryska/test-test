@@ -1,1 +1,0 @@
-import{G as a,H as o}from"./index-DIIii4IR.js";const m={id:"slots",name:"Slots",version:"0.0.0",init:e=>{const r={append:s=>e.store.set(o,t=>[...t,...s]),removeByIds:s=>e.store.set(o,t=>t.filter(i=>!s.has(i.id)))};e.store.set(a,r)}};export{m as pluginModule};
