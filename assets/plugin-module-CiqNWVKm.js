@@ -1,0 +1,1 @@
+import{G as a,H as t}from"./index-DtXEri92.js";const m={id:"core-slots",name:"Slots",version:"0.0.0",init:e=>{const r={append:s=>e.store.set(t,o=>[...o,...s]),removeByIds:s=>e.store.set(t,o=>o.filter(i=>!s.has(i.id)))};e.store.set(a,r)}};export{m as pluginModule};
