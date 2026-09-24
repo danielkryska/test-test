@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting…</title>
+</head>
+<body>
+  <noscript>This app requires JavaScript. Please enable it and reload.</noscript>
+  <script>
+    // GitHub Pages SPA fallback: GH Pages serves this page with a 404 status
+    // for unknown paths (e.g. /test-test/inbox on refresh). Redirect to the
+    // app root carrying the original path; the router consumes `redirect`
+    // and restores the clean URL. Base-agnostic — derived from the URL, so
+    // it works for any deploy path (root → '/', /test-test/ → '/test-test/').
+    var base = new URL('.', location.href).pathname
+    location.replace(base + '?redirect=' + encodeURIComponent(location.pathname + location.search))
+  </script>
+</body>
+</html>
