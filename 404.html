@@ -8,12 +8,26 @@
   <noscript>This app requires JavaScript. Please enable it and reload.</noscript>
   <script>
     // GitHub Pages SPA fallback: GH Pages serves this page with a 404 status
-    // for unknown paths (e.g. /test-test/inbox on refresh). Redirect to the
-    // app root carrying the original path; the router consumes `redirect`
-    // and restores the clean URL. Base-agnostic — derived from the URL, so
-    // it works for any deploy path (root → '/', /test-test/ → '/test-test/').
-    var base = new URL('.', location.href).pathname
-    location.replace(base + '?redirect=' + encodeURIComponent(location.pathname + location.search))
+    // for unknown paths (e.g. /test-test/calendar/today on refresh). Redirect
+    // to the repo root carrying the original path; the router consumes
+    // `redirect` and restores the clean URL.
+    //
+    // Base derivation: project sites live at /<repo>/ — take the FIRST path
+    // segment. Do NOT use `new URL('.', href)`: '.' resolves against the
+    // last segment, so a trailing-slash-less 404'd path (…/calendar/today)
+    // yields …/calendar/ — a URL that 404s again and compounds one more
+    // ?redirect= layer per pass, looping forever. Root/user sites → '/'.
+    var segments = location.pathname.split('/')
+    var base = (segments.length > 1 && segments[1]) ? '/' + segments[1] + '/' : '/'
+
+    if (location.search.indexOf('redirect=') !== -1) {
+      // Loop breaker: this URL already carries a redirect — it was produced
+      // by an earlier (pre-fix) redirect layer. One clean hop to the root;
+      // never re-wrap.
+      location.replace(base)
+    } else {
+      location.replace(base + '?redirect=' + encodeURIComponent(location.pathname + location.search))
+    }
   </script>
 </body>
 </html>

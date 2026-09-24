@@ -1,0 +1,1 @@
+import{I as a,J as t}from"./index-BhcCeMkf.js";const m={id:"core-slots",name:"Slots",version:"0.0.0",init:e=>{const r={append:s=>e.store.set(t,o=>[...o,...s]),removeByIds:s=>e.store.set(t,o=>o.filter(i=>!s.has(i.id)))};e.store.set(a,r)}};export{m as pluginModule};
