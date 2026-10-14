@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,10 +9,93 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/test-test/favicon-16x16.png" />
     <link rel="apple-touch-icon" href="/test-test/apple-touch-icon.png" />
     <title>Revive</title>
-    <script type="module" crossorigin src="/test-test/assets/index-DrfNfCjS.js"></script>
-    <link rel="stylesheet" crossorigin href="/test-test/assets/index-CHC7Isem.css">
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .boot-loader {
+        height: 100dvh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-md, 16px);
+        padding-bottom: 10vh;
+        background-color: var(--color-bg, #141210);
+      }
+      .boot-loader__mark {
+        width: 44px;
+        height: 44px;
+      }
+      .boot-loader__spinner {
+        width: 16px;
+        height: 16px;
+        color: var(--color-text-3, #5a554a);
+        animation: boot-loader-spin 1s linear infinite;
+      }
+      @keyframes boot-loader-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .boot-loader__spinner {
+          animation: none;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/test-test/assets/index-DQihqWbh.js"></script>
+    <link rel="stylesheet" crossorigin href="/test-test/assets/index-Cs1w2UjD.css">
   <link rel="manifest" href="/test-test/manifest.webmanifest"></head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="boot-loader" role="status" aria-label="Loading">
+        <svg viewBox="0 0 512 512" class="boot-loader__mark" aria-hidden="true" focusable="false">
+          <rect width="512" height="512" rx="112" fill="var(--color-surface, #1c1a17)" />
+          <path
+            d="M 95 295 L 185 385 L 295 245"
+            fill="none"
+            stroke="var(--color-primary, #d6927e)"
+            stroke-width="50"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M 375 70 L 392 110 L 435 110 L 400 135 L 414 175 L 375 150 L 336 175 L 350 135 L 315 110 L 358 110 Z"
+            fill="var(--color-primary, #d6927e)"
+          />
+          <path
+            d="M 265 75 L 277 103 L 307 103 L 283 121 L 292 149 L 265 131 L 238 149 L 247 121 L 223 103 L 253 103 Z"
+            fill="var(--color-primary, #d6927e)"
+          />
+          <path
+            d="M 405 195 L 417 223 L 447 223 L 423 241 L 432 269 L 405 251 L 378 269 L 387 241 L 363 223 L 393 223 Z"
+            fill="var(--color-primary, #d6927e)"
+          />
+        </svg>
+        <svg
+          class="boot-loader__spinner"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+        </svg>
+      </div>
+    </div>
   </body>
 </html>
