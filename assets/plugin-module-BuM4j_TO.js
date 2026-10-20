@@ -1,0 +1,1 @@
+import{k as t,P as n}from"./index-C_5m5KGR.js";const i="0192a4b0-1e6d-7b4c-9e1f-2a3b4c5d6e7f";async function a(e){await e.writePipe.send(new t(new n(i,"FilterSort","1.0.0",!0,[],"Filter, sort and group-by panel for entity views")))}export{a as install};
