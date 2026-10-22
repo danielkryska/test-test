@@ -1,0 +1,1 @@
+import{R as s,dP as a,dV as r}from"./index-CpFpnfuw.js";class n extends s{constructor(e){super(),this.registration=e}}class o{validate(e){return e.registration.getErrors()}}class d{async handle(e){a().set(r,e.registration)}}export{n as R,o as a,d as b};

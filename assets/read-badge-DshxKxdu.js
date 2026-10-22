@@ -1,0 +1,1 @@
+import{as as a,dW as m}from"./index-CpFpnfuw.js";import{R as n}from"./read-badge.utils-BSmxRxtM.js";function x({icon:s,labels:e,auto:r=!1,separatorClassName:t,hoverCardInput:o,dataE2e:d}){return a.jsx("span",{"data-e2e":d,className:n,children:a.jsx(m,{icon:s,labels:e,auto:r,separatorClassName:t,hoverCardInput:o})})}export{x as R};

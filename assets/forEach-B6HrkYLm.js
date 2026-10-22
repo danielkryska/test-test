@@ -1,0 +1,1 @@
+import{eT as n,p as c,dZ as s,eU as o,ee as e}from"./index-CpFpnfuw.js";var i=n;function f(a){return typeof a=="function"?a:i}var u=f,E=o,h=e,y=u,_=s;function p(a,r){var t=_(a)?E:h;return t(a,y(r))}var v=p;const d=c(v);export{d as f};

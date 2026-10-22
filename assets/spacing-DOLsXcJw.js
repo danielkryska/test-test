@@ -1,0 +1,1 @@
+import{au as n}from"./index-CpFpnfuw.js";function s(u,r){n.useEffect(()=>{if(!u)return;const e=()=>{var t;return(t=r.current)==null?void 0:t.focus()};return e(),document.addEventListener("focusin",e,!0),()=>document.removeEventListener("focusin",e,!0)},[u,r])}const c=4;export{c as P,s as u};

@@ -1,0 +1,1 @@
+import{R as a,dP as n,a_ as t,a$ as r,dQ as o}from"./index-CpFpnfuw.js";class d extends a{}class l{async handle(){const e=r();if(e){e.close();return}n().set(t,null)}}class u extends a{constructor(e){super(),this.registration=e}}class c{validate(e){return e.registration.getErrors()}}class m{async handle(e){n().set(o,e.registration)}}export{l as C,u as R,c as a,d as b,m as c};

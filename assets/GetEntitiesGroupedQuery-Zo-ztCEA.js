@@ -1,0 +1,1 @@
+import{R as e}from"./index-CpFpnfuw.js";class o extends e{constructor(s,t){super(),this.query=s,this.groupBy=t}}class a extends e{constructor(s,t,u){super(),this.query=s,this.groupBy=t,this.listener=u}}export{o as G,a};

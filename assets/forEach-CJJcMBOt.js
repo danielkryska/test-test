@@ -1,1 +1,0 @@
-import{dq as n,g as c,da as s,dr as o,d9 as i}from"./index-C_5m5KGR.js";var f=n;function u(a){return typeof a=="function"?a:f}var e=u,E=o,h=i,y=e,d=s;function _(a,r){var t=d(a)?E:h;return t(a,y(r))}var p=_;const F=c(p);export{F as f};
