@@ -1,0 +1,1 @@
+import{eY as n,A as c,d$ as s,eZ as o,ej as i}from"./index-UTd-2OMQ.js";var e=n;function f(a){return typeof a=="function"?a:e}var u=f,E=o,h=i,y=u,_=s;function p(a,r){var t=_(a)?E:h;return t(a,y(r))}var v=p;const d=c(v);export{d as f};
