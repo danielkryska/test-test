@@ -1,0 +1,1 @@
+import{R as t}from"./index-CN1MCG0-.js";class n extends t{constructor(){super()}}class c extends t{constructor(){super()}}class i{constructor(e,o,r){this.name=e,this.size=o,this.mtimeMs=r}}class u extends t{constructor(e=""){super(),this.prefix=e}}export{i as E,n as F,u as L,c as R};

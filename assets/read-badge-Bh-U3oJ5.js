@@ -1,0 +1,1 @@
+import{t as a,dY as m}from"./index-CN1MCG0-.js";import{R as n}from"./read-badge.utils-DiziNR02.js";function x({icon:e,labels:s,auto:r=!1,separatorClassName:t,hoverCardInput:o,dataE2e:d}){return a.jsx("span",{"data-e2e":d,className:n,children:a.jsx(m,{icon:e,labels:s,auto:r,separatorClassName:t,hoverCardInput:o})})}export{x as R};

@@ -1,0 +1,1 @@
+import{q as n}from"./index-CN1MCG0-.js";function s(r,t){n.useEffect(()=>{if(!r)return;const e=()=>{var u;return(u=t.current)==null?void 0:u.focus()};return e(),document.addEventListener("focusin",e,!0),()=>document.removeEventListener("focusin",e,!0)},[r,t])}const c=4;export{c as P,s as u};
