@@ -1,0 +1,1 @@
+import{R as t,dN as s,aq as n,d4 as l}from"./index-DzDAXSX5.js";class r extends t{constructor(e){super(),this.key=e}}class d{validate(e){return e.key.getErrors()}}class i{async handle(e){await s().send(new n(l,{id:e.key.getResult()}))}}export{r as D,d as a,i as b};
