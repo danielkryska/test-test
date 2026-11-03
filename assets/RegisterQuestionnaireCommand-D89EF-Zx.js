@@ -1,0 +1,1 @@
+import{R as s,dY as a,e2 as r}from"./index-DdYa2GJt.js";class n extends s{constructor(e){super(),this.registration=e}}class o{validate(e){return e.registration.getErrors()}}class d{async handle(e){a().set(r,e.registration)}}export{n as R,o as a,d as b};
