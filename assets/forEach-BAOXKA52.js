@@ -1,0 +1,1 @@
+import{eX as n,l as c,e4 as s,eY as o,ei as i}from"./index-BCEgxW45.js";var e=n;function f(a){return typeof a=="function"?a:e}var u=f,E=o,h=i,y=u,_=s;function p(a,r){var t=_(a)?E:h;return t(a,y(r))}var v=p;const m=c(v);export{m as f};

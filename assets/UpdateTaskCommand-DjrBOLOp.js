@@ -1,1 +1,0 @@
-import{R as a}from"./index-UTd-2OMQ.js";class r extends a{constructor(s,t){super(),this.taskId=s,this.done=t}}class d extends a{constructor(s,t){super(),this.taskId=s,this.patch=t}}export{r as S,d as U};

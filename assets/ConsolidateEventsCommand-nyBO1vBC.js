@@ -1,0 +1,1 @@
+import{R as d}from"./index-BCEgxW45.js";class l{constructor(s,o,e,i,r,a,n,h,c){this.reason=s,this.retried=o,this.read=e,this.mirrored=i,this.rebuilt=r,this.conflicts=a,this.converged=n,this.snapshots=h,this.skipped=c}}class u extends d{constructor(s="manual"){super(),this.reason=s}}export{u as C,l as E};

@@ -1,1 +1,0 @@
-import{R as t,dG as s,aj as n,cZ as l}from"./index-UTd-2OMQ.js";class r extends t{constructor(e){super(),this.key=e}}class i{validate(e){return e.key.getErrors()}}class d{async handle(e){await s().send(new n(l,{id:e.key.getResult()}))}}export{r as D,i as a,d as b};
