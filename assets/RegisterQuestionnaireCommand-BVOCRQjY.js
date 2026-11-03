@@ -1,0 +1,1 @@
+import{R as s,dX as a,e1 as r}from"./index-C3KumRpg.js";class n extends s{constructor(e){super(),this.registration=e}}class o{validate(e){return e.registration.getErrors()}}class d{async handle(e){a().set(r,e.registration)}}export{n as R,o as a,d as b};
