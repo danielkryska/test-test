@@ -1,0 +1,1 @@
+import{N as n,D as s,eV as r}from"./index-DQYKlFtz.js";import{S as t}from"./SortOption-3LDD_2DT.js";class a extends n{constructor(e){super(e)}validate(e){const o=[];return e.field||o.push(new s("sort field must not be empty")),t.includes(e.option)||o.push(new s("unknown sort option")),r.includes(e.valueType)||o.push(new s("unknown value type")),o}}export{a as S};
