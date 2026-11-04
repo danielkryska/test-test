@@ -1,1 +1,0 @@
-import{R as r}from"./index-DdYa2GJt.js";class a extends r{constructor(s,t,o){super(),this.pluginId=s,this.label=t,this.worker=o}}class i extends r{constructor(s){super(),this.pluginId=s}}export{a as R,i as U};

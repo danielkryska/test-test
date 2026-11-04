@@ -1,0 +1,1 @@
+import{B as a,e3 as n}from"./index-CNYf8QNY.js";import{R as d}from"./read-badge.utils-BODEu6ga.js";function x({icon:e,labels:s,auto:r=!1,separatorClassName:t,hoverCardInput:o,dataE2e:m}){return a.jsx("span",{"data-e2e":m,className:d,children:a.jsx(n,{icon:e,labels:s,auto:r,separatorClassName:t,hoverCardInput:o})})}export{x as R};
