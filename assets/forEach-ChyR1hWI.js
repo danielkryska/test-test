@@ -1,0 +1,1 @@
+import{f4 as n,l as c,ee as s,f5 as f,f6 as o}from"./index-DxLt5JVm.js";var i=n;function e(a){return typeof a=="function"?a:i}var u=e,E=f,h=o,y=u,_=s;function p(a,r){var t=_(a)?E:h;return t(a,y(r))}var v=p;const m=c(v);export{m as f};

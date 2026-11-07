@@ -1,1 +1,0 @@
-import{f2 as n,l as c,eb as s,f3 as o,el as f}from"./index-DQYKlFtz.js";var i=n;function e(a){return typeof a=="function"?a:i}var u=e,E=o,h=f,y=u,_=s;function p(a,r){var t=_(a)?E:h;return t(a,y(r))}var v=p;const b=c(v);export{b as f};
