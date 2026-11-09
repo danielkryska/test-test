@@ -1,1 +1,0 @@
-import{R as r}from"./index-ChApcXc-.js";class c{constructor(t,s,a,i){this.path=t,this.text=s,this.size=a,this.mtimeMs=i}}class h extends r{constructor(t){super(),this.path=t}}class l extends r{constructor(t,s){super(),this.path=t,this.text=s}}export{h as R,c as S,l as W};

@@ -1,1 +1,0 @@
-import{H as a,eo as d}from"./index-ChApcXc-.js";import{R as i}from"./read-badge.utils-BWOsBLIl.js";function R({icon:e,labels:s,auto:r=!1,separator:o,separatorClassName:t,hoverCardInput:m,dataE2e:n}){return a.jsx("span",{"data-e2e":n,className:i,children:a.jsx(d,{icon:e,labels:s,auto:r,separator:o,separatorClassName:t,hoverCardInput:m})})}export{R};

@@ -1,0 +1,1 @@
+import{n as o,eb as u,ec as h,ed as i}from"./index-DX2VF2B_.js";var s=i,v=u,f=h,x=Math.ceil,I=Math.max;function d(t,e,l){(l?v(t,e,l):e===void 0)?e=1:e=I(f(e),0);var n=t==null?0:t.length;if(!n||e<1)return[];for(var a=0,c=0,r=Array(x(n/e));a<n;)r[c++]=s(t,a,a+=e);return r}var g=d;const C=o(g);export{C as c};

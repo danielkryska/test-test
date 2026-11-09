@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Revive — Google Drive sign-in</title>
+  </head>
+  <body>
+    <p id="status">Finishing the Google Drive sign-in…</p>
+    <script>
+      ;(function () {
+        var status = document.getElementById('status')
+        var params = new URLSearchParams(window.location.search)
+        var message = {
+          type: 'revive-drive-oauth',
+          code: params.get('code'),
+          state: params.get('state'),
+          error: params.get('error'),
+        }
+        if (!window.opener) {
+          status.textContent = 'Open this sign-in from Revive.'
+          return
+        }
+        window.opener.postMessage(message, window.location.origin)
+        window.close()
+        status.textContent = 'Sign-in complete. You can close this window.'
+      })()
+    </script>
+  </body>
+</html>

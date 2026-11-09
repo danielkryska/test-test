@@ -1,0 +1,1 @@
+import{R as r}from"./index-DX2VF2B_.js";class n extends r{constructor(s,t,o,a,e,i){super(),this.taskId=s,this.projectId=t,this.anchorId=o,this.position=a,this.sectionId=e,this.parentId=i}}export{n as M};
