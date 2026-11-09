@@ -1,0 +1,1 @@
+import{R as e,eb as a,el as r}from"./index-ChApcXc-.js";class n extends e{constructor(s){super(),this.registration=s}}class i{validate(s){return s.registration.getErrors()}}class d{async handle(s){a().set(r,s.registration)}}export{n as R,i as a,d as b};

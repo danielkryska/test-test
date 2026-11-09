@@ -1,0 +1,1 @@
+import{R as s,dg as t,as as n,da as l}from"./index-ChApcXc-.js";class r extends s{constructor(e){super(),this.key=e}}class d{validate(e){return e.key.getErrors()}}class i{async handle(e){await t().send(new n(l,{id:e.key.getResult()}))}}export{r as D,d as a,i as b};

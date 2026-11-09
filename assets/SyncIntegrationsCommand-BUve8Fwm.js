@@ -1,0 +1,1 @@
+import{R as n}from"./index-ChApcXc-.js";class c{constructor(s,a,i,o,e){this.targets=s,this.ok=a,this.failed=i,this.consolidated=o,this.skipped=e}}class d extends n{constructor(s){super(),this.pluginIds=s}}export{c as I,d as S};

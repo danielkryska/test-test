@@ -1,1 +1,0 @@
-import{R as t,dd as s,aq as n,d7 as l}from"./index-DxLt5JVm.js";class d extends t{constructor(e){super(),this.key=e}}class r{validate(e){return e.key.getErrors()}}class i{async handle(e){await s().send(new n(l,{id:e.key.getResult()}))}}export{d as D,r as a,i as b};
