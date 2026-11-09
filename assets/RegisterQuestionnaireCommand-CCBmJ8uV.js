@@ -1,1 +1,0 @@
-import{R as s,eh as a,em as r}from"./index-DX2VF2B_.js";class n extends s{constructor(e){super(),this.registration=e}}class o{validate(e){return e.registration.getErrors()}}class m{async handle(e){a().set(r,e.registration)}}export{n as R,o as a,m as b};
