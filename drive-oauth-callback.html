@@ -3,27 +3,117 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#141210" />
     <title>Revive — Google Drive sign-in</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --color-bg: #141210;
+        --color-surface: #1c1a17;
+        --color-text-1: #ede9e3;
+        --color-text-2: #8a857a;
+        --color-text-3: #5a554a;
+        --color-primary: #d6927e;
+        --space-5: 20px;
+        --space-6: 32px;
+        --space-7: 48px;
+        --radius-md: 8px;
+        --text-base: 15px;
+        --weight-normal: 400;
+        --weight-medium: 500;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100dvh;
+        padding: var(--space-7);
+        background-color: var(--color-bg);
+        color: var(--color-text-1);
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: var(--text-base);
+        font-weight: var(--weight-normal);
+      }
+      #status {
+        margin: 0;
+        max-width: 672px;
+        padding: var(--space-6);
+        border-radius: var(--radius-md);
+        background-color: var(--color-surface);
+        font-weight: var(--weight-medium);
+        text-align: center;
+      }
+      :focus-visible {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+      @media (max-width: 767px) {
+        body {
+          padding: var(--space-5);
+        }
+        #status {
+          border-radius: 0;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0ms;
+          transition-duration: 0ms;
+        }
+      }
+    </style>
   </head>
   <body>
     <p id="status">Finishing the Google Drive sign-in…</p>
     <script>
-      ;(function () {
+      (function () {
         var status = document.getElementById('status')
-        var params = new URLSearchParams(window.location.search)
-        var message = {
-          type: 'revive-drive-oauth',
-          code: params.get('code'),
-          state: params.get('state'),
-          error: params.get('error'),
+
+        var handOff = function (payload) {
+          try {
+            sessionStorage.setItem('revive-drive-gis-handoff', JSON.stringify(payload))
+          } catch (err) {
+            // Private mode or blocked storage: the page still returns to the app.
+          }
         }
-        if (!window.opener) {
-          status.textContent = 'Open this sign-in from Revive.'
+
+        var params = new URLSearchParams(window.location.hash.replace(/^#/, ''))
+        var error = params.get('error')
+        var accessToken = params.get('access_token')
+
+        if (error) {
+          handOff({
+            kind: 'error',
+            error: error,
+            errorDescription: params.get('error_description') || '',
+          })
+          window.location.replace('/')
           return
         }
-        window.opener.postMessage(message, window.location.origin)
-        window.close()
-        status.textContent = 'Sign-in complete. You can close this window.'
+
+        if (accessToken) {
+          var expiresIn = Number(params.get('expires_in'))
+          handOff({
+            kind: 'token',
+            accessToken: accessToken,
+            expiresIn: Number.isFinite(expiresIn) && expiresIn > 0 ? expiresIn : 3600,
+          })
+          window.location.replace('/')
+          return
+        }
+
+        status.textContent = 'Open this sign-in from Revive.'
       })()
     </script>
   </body>

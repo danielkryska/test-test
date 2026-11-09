@@ -1,1 +1,0 @@
-import{R as e,eh as a,er as r}from"./index-dL7-bLxB.js";class n extends e{constructor(s){super(),this.registration=s}}class i{validate(s){return s.registration.getErrors()}}class d{async handle(s){a().set(r,s.registration)}}export{n as R,i as a,d as b};
