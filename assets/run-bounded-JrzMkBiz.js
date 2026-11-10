@@ -1,0 +1,1 @@
+import{c as u}from"./chunk-BnZWAXj-.js";import{b8 as i}from"./index-2GLbtiwi.js";const h=4;async function l(o,s,c){const a=Math.min(s,o.length);if(a<1)return;const e=i(o,(n,t)=>({item:n,index:t})),r=u(e,Math.ceil(e.length/a));await Promise.all(i(r,async n=>{for(const{item:t,index:m}of n)await c(t,m)}))}export{h as B,l as r};

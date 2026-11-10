@@ -1,0 +1,1 @@
+import{O as n,D as s,fo as r}from"./index-2GLbtiwi.js";import{S as t}from"./SortOption-3LDD_2DT.js";class a extends n{constructor(o){super(o)}validate(o){const e=[];return o.field||e.push(new s("sort field must not be empty")),t.includes(o.option)||e.push(new s("unknown sort option")),r.includes(o.valueType)||e.push(new s("unknown value type")),e}}export{a as S};

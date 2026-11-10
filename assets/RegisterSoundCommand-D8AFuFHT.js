@@ -1,0 +1,1 @@
+import{R as e,ei as a,et as r}from"./index-2GLbtiwi.js";class n extends e{constructor(t){super(),this.registration=t}}class i{validate(t){return t.registration.getErrors()}}class d{async handle(t){a().set(r,t.registration)}}export{n as R,i as a,d as b};
