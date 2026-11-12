@@ -1,1 +1,0 @@
-import{n as o,ee as u,ef as h,eg as i}from"./index-2GLbtiwi.js";var f=i,s=u,v=h,x=Math.ceil,g=Math.max;function I(t,e,l){(l?s(t,e,l):e===void 0)?e=1:e=g(v(e),0);var n=t==null?0:t.length;if(!n||e<1)return[];for(var a=0,c=0,r=Array(x(n/e));a<n;)r[c++]=f(t,a,a+=e);return r}var m=I;const _=o(m);export{_ as c};

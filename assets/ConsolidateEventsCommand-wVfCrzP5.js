@@ -1,0 +1,1 @@
+import{R as m}from"./index-CbKFT67E.js";class u{constructor(s,i,e,o,r,a,n,h,d,c=0){this.reason=s,this.retried=i,this.read=e,this.mirrored=o,this.rebuilt=r,this.conflicts=a,this.converged=n,this.snapshots=h,this.skipped=d,this.unmaterialized=c}}class p extends m{constructor(s="manual"){super(),this.reason=s}}export{p as C,u as E};
