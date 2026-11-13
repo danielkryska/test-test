@@ -1,0 +1,1 @@
+import{L as a,eI as d}from"./index-Ca4nkRLv.js";import{R as i}from"./read-badge.utils-HRDIptQK.js";function R({icon:e,labels:s,auto:r=!1,separator:t,separatorClassName:o,hoverCardInput:m,dataE2e:n}){return a.jsx("span",{"data-e2e":n,className:i,children:a.jsx(d,{icon:e,labels:s,auto:r,separator:t,separatorClassName:o,hoverCardInput:m})})}export{R};

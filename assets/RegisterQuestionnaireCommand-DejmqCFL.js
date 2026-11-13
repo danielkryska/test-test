@@ -1,0 +1,1 @@
+import{R as s,ek as a,ep as r}from"./index-Ca4nkRLv.js";class n extends s{constructor(e){super(),this.registration=e}}class o{validate(e){return e.registration.getErrors()}}class g{async handle(e){a().set(r,e.registration)}}export{n as R,o as a,g as b};

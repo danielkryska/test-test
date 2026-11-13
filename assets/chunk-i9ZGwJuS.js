@@ -1,0 +1,1 @@
+import{v as h,eg as i,eh as o,ei as u}from"./index-Ca4nkRLv.js";var v=u,s=i,f=o,x=Math.ceil,g=Math.max;function I(t,e,l){(l?s(t,e,l):e===void 0)?e=1:e=g(f(e),0);var n=t==null?0:t.length;if(!n||e<1)return[];for(var a=0,c=0,r=Array(x(n/e));a<n;)r[c++]=v(t,a,a+=e);return r}var m=I;const _=h(m);export{_ as c};
