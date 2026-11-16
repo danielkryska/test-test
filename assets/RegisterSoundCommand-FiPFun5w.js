@@ -1,1 +1,0 @@
-import{R as e,el as a,ex as r}from"./index-DZbdtoN0.js";class n extends e{constructor(s){super(),this.registration=s}}class i{validate(s){return s.registration.getErrors()}}class d{async handle(s){a().set(r,s.registration)}}export{n as R,i as a,d as b};
