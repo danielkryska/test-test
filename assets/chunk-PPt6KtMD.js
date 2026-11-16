@@ -1,0 +1,1 @@
+import{v as h,eh as i,ei as o,ej as u}from"./index-DZbdtoN0.js";var v=u,s=i,f=o,x=Math.ceil,I=Math.max;function g(t,e,l){(l?s(t,e,l):e===void 0)?e=1:e=I(f(e),0);var n=t==null?0:t.length;if(!n||e<1)return[];for(var a=0,c=0,r=Array(x(n/e));a<n;)r[c++]=v(t,a,a+=e);return r}var m=g;const _=h(m);export{_ as c};
