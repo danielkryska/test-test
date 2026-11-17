@@ -1,1 +1,0 @@
-import{v as i,ei as o,ej as u,ek as h}from"./index-CYsDdB2L.js";var v=h,s=o,f=u,x=Math.ceil,I=Math.max;function g(t,e,l){(l?s(t,e,l):e===void 0)?e=1:e=I(f(e),0);var n=t==null?0:t.length;if(!n||e<1)return[];for(var a=0,c=0,r=Array(x(n/e));a<n;)r[c++]=v(t,a,a+=e);return r}var k=g;const C=i(k);export{C as c};

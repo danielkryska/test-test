@@ -1,1 +1,0 @@
-import{R as s,em as a,er as r}from"./index-CYsDdB2L.js";class n extends s{constructor(e){super(),this.registration=e}}class o{validate(e){return e.registration.getErrors()}}class m{async handle(e){a().set(r,e.registration)}}export{n as R,o as a,m as b};
