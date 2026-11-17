@@ -1,1 +1,0 @@
-import{R as s,ej as a,eo as r}from"./index-DMK15kL9.js";class n extends s{constructor(e){super(),this.registration=e}}class o{validate(e){return e.registration.getErrors()}}class g{async handle(e){a().set(r,e.registration)}}export{n as R,o as a,g as b};

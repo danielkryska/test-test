@@ -1,0 +1,1 @@
+import{t as s,a5 as d}from"./index-DNLDyXBp.js";const f=4;async function l(a,i,c){const o=Math.min(i,a.length);if(o<1)return;const e=s(a,(n,t)=>({item:n,index:t})),r=d(e,Math.ceil(e.length/o));await Promise.all(s(r,async n=>{for(const{item:t,index:u}of n)await c(t,u)}))}export{f as B,l as r};
